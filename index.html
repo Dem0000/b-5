@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpage with Header, Sections, and Footer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script>
-        window.onload = function() {
-            window.scrollTo(0, 0);
-        };
-    </script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
-                <li><a href="#section5">Section 5</a></li>
-            </ul>
-        </nav>
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li><a href="#section4">Section 4</a></li>
+          <li><a href="#section5">Section 5</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="section1">
-        <h2>Section 1</h2>
-        <p>Content for the first section.</p>
+      <h2>Section 1</h2>
+      <p>Content for the first section.</p>
     </section>
 
     <section id="section2">
-        <h2>Section 2</h2>
-        <p>Content for the second section.</p>
+      <h2>Section 2</h2>
+      <p>Content for the second section.</p>
     </section>
 
     <section id="section3">
-        <h2>Section 3</h2>
-        <p>Content for the third section.</p>
+      <h2>Section 3</h2>
+      <p>Content for the third section.</p>
     </section>
 
     <section id="section4">
-        <h2>Section 4</h2>
-        <p>Content for the fourth section.</p>
+      <div class="card">
+        <div class="card-image">
+          <img src="image/section4left.jfif" alt="Large Image 1" />
+          <div class="card-text-top">LIFESTYLE</div>
+        </div>
+        <div class="card-profile">
+          <img
+            src="image/profilepicture.jfif"
+            alt="Profile Picture 1"
+            class="profile-picture"
+          />
+          <div class="profile-info">
+            <p class="name">Mallory Reyn</p>
+            <p class="date">April 14th, 2023</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>10 Things to help you with social stress.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet sapien
+            fringilla, mattis mattis tellus. Nullam quis imperdiet augue.
+            Vestibulum.
+          </p>
+          <a href="#" class="readmore"
+            ><span>&rarr;</span><text>READ MORE</text></a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="image/section4right.jfif" alt="Large Image 2" />
+          <div class="card-text-top">SUMMER</div>
+        </div>
+        <div class="card-profile">
+          <img
+            src="image/profilepicture.jfif"
+            alt="Profile Picture 2"
+            class="profile-picture"
+          />
+          <div class="profile-info">
+            <p class="name">Mallory Reyn</p>
+            <p class="date">April 14th, 2023</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>The summer 2023 lineup is finally here.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet sapien
+            fringilla, mattis mattis tellus. Nullam quis imperdiet augue.
+            Vestibulum.
+          </p>
+          <a href="#" class="readmore"
+            ><span>&rarr;</span><text>READ MORE</text></a
+          >
+        </div>
+      </div>
     </section>
 
     <section id="section5">
-        <h2>Section 5</h2>
-        <p>Content for the fifth section.</p>
+      <h2>Section 5</h2>
+      <p>Content for the fifth section.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+      <p>&copy; 2024 My Website. All Rights Reserved.</p>
     </footer>
-
-</body>
+    <script>
+      window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </body>
 </html>
