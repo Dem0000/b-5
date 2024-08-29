@@ -6,7 +6,6 @@
 }
 
 
-
 .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -22,6 +21,11 @@
    justify-content: space-between;
    padding: 37px 84px;
 }
+
+.head .container{
+   margin-left: 84px;
+ }
+
 
       /* --style logo-- */
 
@@ -46,25 +50,45 @@
 
  .nav{
     display: flex;
-    gap: 80px;
+    gap: 55px;
     align-items: center;
  }
 
 
  .nav a{
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 700;
-    color:  rgba(38, 38, 38, 1);
-  
- }
+   font-family: Poppins, sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   color: rgba(38, 38, 38, 1);
+   text-decoration: none;
+   padding: 10px 20px; 
+   position: relative; 
+   display: inline-block; 
+   transition: color 0.3s ease;
+   box-sizing: border-box;
+}
+
+.nav a::before {
+   content: ''; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(76, 224, 215, 0); 
+   border-radius: 40px; 
+   transition: background-color 0.3s ease; 
+   z-index: -1; 
+}
+
+
+.nav a:hover::before {
+   background-color: rgba(76, 224, 215, 1); 
+}
 
 
  .nav a:hover{
-   background-color: rgba(76, 224, 215, 1);
-   padding: 9px 32.1px 7.12px 32px;
-   border-radius: 40px;
-
+   color: white; 
 }
 
 
@@ -77,8 +101,10 @@
  .magazin{
     width: 1272px;
     height: 559px;
+    border-radius: 40px;
     background: url(./assets/Mask\ group.png);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column; 
     justify-content: left;
@@ -144,26 +170,23 @@
          /* --stye footer-- */
 
 .footer{
-    height: 308px;
-    padding: 87px;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     display: flex;
     flex-direction: column;
-    
-    
+        
 }
 
          /* --footer first-section--*/
 
 .first-section{
-    width: 1440px;
-    height: 213px;
-    margin: 0 auto;
+    max-width: fit-content;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 856px;
-    padding-bottom: 77px;
-   position: relative;
+    justify-content: space-between;
+    margin-top: 87px;
+    gap: 558px;
+    padding-left: 86.5px;
 
     
 }
@@ -171,27 +194,26 @@
 .first-section h3{
    
     color: rgba(38, 38, 38, 1);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 39px;
+    text-wrap: nowrap;
     
-    
-
 }
- .footer h3{
-    position: absolute;
-    margin: 87px 337px 179px 876px;
-    padding-top: 87px;
-
- }
 
  .navigation{
     display: flex;
-    gap: 18px;
-    width: 235px;
+    gap: 20px;
+  
      
  }
+
+ .navigation img{
+   width: 31px;
+   height: 31px;
+ }
+
 
  .navigation img:hover{
    transform: scale(1.2);
@@ -204,19 +226,24 @@
     width: 1267px;
     height: 0px;
     border: 1px solid #BCBCBC;
+    margin: 0 auto;
  }
 
  .second-section p{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     text-align: left;
     color:   rgba(38, 38, 38, 1);
-    padding-top: 15px;
-  
-
+   
  }
+
+ .second-section p:last-child{
+   padding-left: 86.5px;
+   padding-top: 34px;
+   margin-bottom: 37px;
+  }
 
 
     
