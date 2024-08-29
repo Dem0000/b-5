@@ -1,60 +1,234 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    text-decoration: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+   
+
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+         /* --style header-- */
+.head{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 37px 84px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
+      /* --style logo-- */
+
+ .logo{
+     max-width: 234px ;
+     max-height: 49px;
+ }
+
+
+ .logo img{
+    max-width: 234px ;
+    max-height: 49px;
+ }
+
+
+   .logo img:hover{
+   background: linear-gradient(90deg, #4CE0D7 43.06%, #8BA9F4 100%);
+   border-radius: 20px;
+  }
+
+         /* --nstyle navigation-- */
+
+ .nav{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+ }
+
+
+ .nav a{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    color:  rgba(38, 38, 38, 1);
+  
+ }
+
+
+ .nav a:hover{
+   background-color: rgba(76, 224, 215, 1);
+   padding: 9px 32.1px 7.12px 32px;
+   border-radius: 40px;
+
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+
+ .nav img:hover{
+   transform: rotate(35deg);
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+         /* --style section1-- */
+
+ .magazin{
+    width: 1272px;
+    height: 559px;
+    background: url(./assets/Mask\ group.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: left;
+    align-items: first baseline;
+    gap: 20px;
+    padding: 258px;
+    padding-left: 57px;
+   
+    
+ }
+
+
+ .magazin h1{
+    
+    font-family: Poppins;
+    font-size: 46px;
+    font-weight: 400;
+    color:  rgba(249, 249, 249, 1)
+    
+    
+ }
+
+
+ h1 span{
+    background: linear-gradient(90deg, #4CE0D7 43.06%, #8BA9F4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-family: Poppins;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px;
+
+   
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+
+.magazin p{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.23em;
+    
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.magazin p:last-child{
+   
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+   
+   
 }
 
-section h2 {
-    margin-top: 0;
+.breack span::before{
+    content: "\A";
+    white-space: pre;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+         /* --stye footer-- */
+
+.footer{
+    height: 308px;
+    padding: 87px;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
+
+         /* --footer first-section--*/
+
+.first-section{
+    width: 1440px;
+    height: 213px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 856px;
+    padding-bottom: 77px;
+   position: relative;
+
+    
+}
+ 
+.first-section h3{
+   
+    color: rgba(38, 38, 38, 1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    
+    
+
+}
+ .footer h3{
+    position: absolute;
+    margin: 87px 337px 179px 876px;
+    padding-top: 87px;
+
+ }
+
+ .navigation{
+    display: flex;
+    gap: 18px;
+    width: 235px;
+     
+ }
+
+ .navigation img:hover{
+   transform: scale(1.2);
+   
+ }
+
+      /* -- footer second-section-- */
+
+ .second-section div{
+    width: 1267px;
+    height: 0px;
+    border: 1px solid #BCBCBC;
+ }
+
+ .second-section p{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    color:   rgba(38, 38, 38, 1);
+    padding-top: 15px;
+  
+
+ }
+
+
+    
+
+
+   
+
+    
+
+
+
+  
+
+
+  
