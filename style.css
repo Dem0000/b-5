@@ -1,60 +1,316 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+  margin: 0;
+  font-size: 2.5em;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: underline;
 }
 
 section h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
+#section3 {
+  display: flex;
+  justify-content: center;
+  max-width: 1204px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 700px;
+}
+
+.card3 {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 6px 6px 0px #0000000d;
+}
+
+.card-image3 {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-image3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.7s ease, object-position 0.7s ease; /* Smooth transition */
+}
+
+.card-image3:hover img {
+  object-position: 50% 30%; /* Adjust the position to reveal more of the cropped image */
+  transform: scale(1.05); /* Slightly increase the size */
+}
+
+.text-badge3 {
+  position: absolute;
+  top: 23px;
+  left: 47px;
+  background: #262626;
+  color: #fff;
+  padding: 10px 81px;
+  border-radius: 40px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+.card-image3:hover .text-badge3 {
+  background-color: #4ce0d7;
+}
+
+.card-profile3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  position: relative; /* Position relative for absolute positioning of child elements */
+  margin-left: 50px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.profile-picture3 {
+  width: 65px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+  margin-right: 45px;
+}
+
+.profile-picture3:hover {
+  object-fit: fill;
+  transform: scale(1.7);
+  border-radius: 20%;
+  z-index: 2;
+}
+
+.name3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  transition: color 0.5s ease, font-size 0.5s ease;
+  color: #bcbcbc;
+}
+
+.name3:hover {
+  color: black;
+  transform: scale(1.5);
+}
+
+.profile-picture3:hover ~ .name3 {
+  color: black;
+  transform: scale(1.5);
+}
+
+.info3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  color: #bcbcbc;
+  height: 30px;
+  transition: color 0.5s ease, font-size 0.5s ease, transform 0.3s ease;
+  margin-left: 100px;
+}
+
+.date3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: #bcbcbc;
+  transition: color 0.5s ease;
+  text-align: left;
+  position: relative;
+}
+
+.info3:hover .date3 {
+  color: #262626;
+}
+
+.event3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.24em;
+  text-align: right;
+  color: #f25e5e;
+  margin-right: 90px;
+  position: relative;
+}
+
+.info3:hover .event3 {
+  transform: scale(1.3);
+}
+
+.underimag3 {
+  margin-left: 65px;
+  margin-right: auto;
+  transition: text-decoration 0.3s ease;
+  margin-top: 20px;
+}
+
+.underimag3 h2 {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 25px;
+  transition: text-decoration 0.3s ease; /* Add transition for smooth effect */
+  position: relative;
+}
+
+.underimag3 h2:hover {
+  text-decoration: underline; /* Apply underline on hover */
+}
+.underimag3:hover h2 {
+  text-decoration: underline;
+}
+
+.underimag3 p {
+  font-size: 16px;
+  color: #262626;
+  text-align: left;
+  max-width: 800px;
+  position: relative;
+}
+
+.read-more3 {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.arrow {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #4ce0d7;
+  transition: color 0.3s;
+}
+
+.read-more-text {
+  color: #4ce0d7;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.24em;
+}
+
+.read-more3:hover .arrow {
+  color: blue; /* Change the arrow color on hover */
+}
+
+.read-more3:hover .read-more-text {
+  color: blue;
+}
+
+@media (max-width: 700px) {
+  .card-profile3 {
+    margin-left: 10px;
+    flex-direction: column;
+  }
+  .text-badge3 {
+    top: 10px;
+    left: 10px;
+    padding: 10px 10px;
+    border-radius: 40px;
+  }
+  .profile-picture3 {
+    margin-right: 0;
+  }
+  .info3 {
+    margin-left: 0;
+    gap: 30px;
+  }
+  .event3 {
+    margin-right: 0cm;
+  }
+  .underimag3 {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .info3 {
+    flex-direction: column;
+  }
+
+  header h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 200px) {
+  .card-profile3 {
+    margin-left: 0px;
+  }
+  .text-badge3 {
+    top: 5px;
+    left: 5px;
+    padding: 10px 10px;
+    border-radius: 40px;
+  }
+  .event3 {
+    letter-spacing: normal;
+  }
+  .info3 {
+    gap: 10px;
+  }
+  .underimag3 {
+    margin-left: 2px;
+  }
+}
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
