@@ -173,6 +173,180 @@
     white-space: pre;
 }
 
+            /*--style secton5--*/
+
+            .card1,
+            .card2,
+            .card3{
+              
+             margin-top: 88px;
+             
+             display: flex;
+             justify-content: space-between;
+             gap: 45px;
+             padding-left: 86.5px;
+          
+            }
+            .card2,
+            .card3{
+              margin-top: 48px;
+            }
+          
+          
+            .fashion,
+            .brands,
+            .health{
+             background-image: url(./assets/Mask\ group\ \(5\).png);
+             width: 547.5px;
+             height: 368px;
+             width: 100vh;
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: left;
+             border-radius: 40px;
+            
+           }
+          
+           .brands{
+            background-image: url(./assets/Mask\ group\ \(6\).png);
+            
+            
+           }
+          
+           .health{
+            background-image: url(./assets/Mask\ group\ \(7\).png);
+            
+           }
+          
+           .section5 button{
+             background-color: rgba(38, 38, 38, 1);
+             border-radius: 40px;
+             padding: 10px 54px;
+             margin-top: 26px;
+             margin-left: 35px;
+             max-width: 176PX;
+             text-wrap: nowrap;
+             
+            
+           }
+            
+           .section5 button a{
+            text-align: center;
+            color:  rgba(255, 255, 255, 1);
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+           } 
+          
+           .card3 button{
+            display: flex;
+            justify-content: center;
+           }
+          
+           .section5 button:hover{
+              background-color: white;
+              box-shadow: 2px #333;
+           }
+           
+           .section5 button a:hover{
+            color: #333;
+           }
+          
+          
+          
+           .reasons{
+            display: flex;
+            flex-direction: column;
+          
+            
+           }
+          
+           .top p{
+            color:  rgba(188, 188, 188, 1);
+            font-family: Poppins;
+          
+          font-weight: 400;
+          
+          text-wrap: nowrap;
+          
+           
+           }
+          
+          
+           
+            
+            .top{
+             display: flex;
+             gap:  135px;
+             margin-bottom: 52px;
+           }
+          
+           .top p{
+             padding-right: 110px;
+             text-align: left;
+          
+           }
+          
+           
+           
+           .mid{
+           display: flex;
+           flex-direction: column;
+           gap: 40px;
+           }
+          
+           .mid h3{
+          font-family: Poppins;
+          font-size: 26px;
+          font-weight: 700;
+          text-align: left;
+          max-width: 540px;
+          
+           }
+           .card2 h3{
+            max-width: 400px;
+           }
+          
+           .mid p{
+            font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          text-align: left;
+          max-width: 450px;
+          
+           }
+          
+           .mid p span::before {
+            content: "";
+            display: block;
+            
+          }
+           .card3 h3{
+            max-width: 400px;
+           }
+          
+           .mid p:last-child{
+            padding-bottom:30px ;
+            
+           }
+           
+           .bottom{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+           }
+           .bottom p{
+            color: rgba(76, 224, 215, 1);
+            font-family: Poppins;
+          font-size: 12px;
+          font-weight: 700;
+          text-align: left;
+          
+            
+           }
+          
+          
+
+
          /* --stye footer-- */
 
 .footer{
