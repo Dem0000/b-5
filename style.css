@@ -67,6 +67,7 @@
    display: inline-block; 
    transition: color 0.3s ease;
    box-sizing: border-box;
+   text-wrap: nowrap;
 }
 
 .nav a::before {
