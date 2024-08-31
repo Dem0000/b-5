@@ -45,6 +45,10 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+
+/*START OF SECTION4*/
+
+
 #section4 {
   display: flex;
   flex-direction: column;
@@ -151,6 +155,7 @@ nav ul li a:hover {
   padding: 15px;
   margin-left: 20px;
   position: relative;
+  flex-direction: row;
 }
 
 .profile-picture {
@@ -158,6 +163,7 @@ nav ul li a:hover {
   height: 50px;
   border-radius: 50%;
   transition: transform 0.5s ease, border-radius 0.5s ease;
+  object-fit: cover;
 }
 
 .profile-picture:hover {
@@ -212,6 +218,11 @@ nav ul li a:hover {
   margin-left: 34px;
   margin-right: 75px;
   margin-top: 0;
+  transition: text-decoration 0.5s ease;
+}
+.card-content:hover h3{
+  text-decoration: underline;
+
 }
 
 .card-content h3 {
@@ -242,7 +253,6 @@ nav ul li a:hover {
   color: #4ce0d7;
   text-decoration: none;
   font-weight: bold;
-  transition: text-decoration 0.5s ease;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -251,21 +261,21 @@ nav ul li a:hover {
   text-align: left;
 }
 
-.readmore :hover {
-  text-decoration: underline;
+.readmore:hover {
   color: blue;
 }
 
 .readmore span {
   text-decoration: none;
   font-size: 30px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .readmore:hover span {
-  text-decoration: none;
   color: blue;
 }
+
+
 @media (max-width: 1200px) {
   #section4 {
     padding-left: 20px;
@@ -339,3 +349,16 @@ nav ul li a:hover {
     height: 20px;
   }
 }
+/*END OF SECTION4*/
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+
