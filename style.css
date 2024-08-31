@@ -43,21 +43,26 @@ section h2 {
   margin-top: 0;
 }
 
+
+
+/* START OF SECTION 3*/
+
 #section3 {
   display: flex;
   justify-content: center;
-  max-width: 1204px;
-  margin-left: auto;
-  margin-right: auto;
   min-height: 700px;
+  font-family: poppins;
+  background-color: #f4f4f4;
+  padding-bottom: 97px;
 }
 
 .card3 {
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-  width: 100%;
+  width: 1204px;
   box-shadow: 0px 6px 6px 0px #0000000d;
+  height: 700px;
 }
 
 .card-image3 {
@@ -219,6 +224,7 @@ section h2 {
 }
 
 .read-more3 {
+  padding-top: 40px;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -307,6 +313,9 @@ section h2 {
     margin-left: 2px;
   }
 }
+/*END OF SECTION3*/
+
+
 footer {
   background-color: #333;
   color: #fff;
