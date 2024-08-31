@@ -284,6 +284,7 @@ section h2 {
 @media (max-width: 400px) {
   .info3 {
     flex-direction: column;
+    gap: 2px;
   }
 
   header h1 {
