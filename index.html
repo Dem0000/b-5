@@ -329,9 +329,12 @@
         }
       };
     </script>
-    <script>
+     <script>
       window.addEventListener("load", function () {
-        document.getElementById("section1").scrollIntoView();
+        // Check if the page has been scrolled away from the top
+        if (window.scrollY !== 0) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       });
     </script>
   </body>
