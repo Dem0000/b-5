@@ -3,124 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpage with Header, Sections, and Footer</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      window.onload = function () {
-        window.scrollTo(0, 0);
-      };
-    </script>
-</head>
-<body>
-                 <!-- header -->
-
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  
+  </head>
+  <body>
+    <!----========================              Header                  ===========================================-->
     <header>
-        <div class="head container">
-            <div class="logo">
-                <img src="./assets/Component 1.png" alt="">
-            </div>
-            <div class="nav">
-                <a href="">Fashion</a>
-                <a href="">Lifestyle</a>
-                <a href="">Spiritual</a>
-                <a href="">Mental Health</a>
-                <a href="">Contact Us</a>
-                <img src="./assets/Component 2.png" alt="">
-            </div>
-            <div class="hamburger">
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-           
+      <div class="head-container">
+        <div class="logo">
+          <img src="assets/Component 1.png" alt="Logo" />
         </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="navheader">
+          <a href="#section2">Fashion</a>
+          <a href="#section3">Lifestyle</a>
+          <a href="#section4">Spiritual</a>
+          <a href="#section5">Mental Health</a>
+          <a href="#footer">Contact Us</a>
+          <div class="search-container">
+            <img
+              src="assets/Component 2.png"
+              alt="Search Icon"
+              class="search-icon"
+            />
+            <div class="search-box">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-                         <!-- section1 -->
 
-    <section class="section1">
-        <div class="magazin container">
-
-            <p>LUX VENTUS MAGAZINE</p>
-
-            <h1>We Are the <span> Ventus Fashion</span></h1>
-
-            <div class="breack">
-                <p>We like to gossip about everything, but we <span class="breack">will never forget the daily fashion dose.</span></p>
-            </div>
-            
+    <!--=============================             Section 1         ================================================-->
+    <section class="section1" id="section1">
+      <div class="magazin container">
+        <p>LUX VENTUS MAGAZINE</p>
+        <h1>We Are the <span>Ventus Fashion</span></h1>
+        <div class="breack">
+          <p>
+            We like to gossip about everything, but we
+            <span class="breack"
+              >will never forget the daily fashion dose.</span
+            >
+          </p>
         </div>
+      </div>
     </section>
 
-    <!-- Section 2 - Topics -->
-
+    <!--================================            Section 2 - Topics       =============================== -->
     <section id="section2">
-        <div class="section2-div">
-
-            <h1>Topics</h1>
-            <div class="section2-cards">
-              
-                <div class="section2-card">
-                    <img src="section2pics/lingerie-underwear.png" alt="">
-                    <h2>Lingerie</h2>
-                    <button>View More</button>
-                </div>
-                <div class="section2-card">
-                    <img src="section2pics/dress.png" alt="">
-                    <h2>Spring</h2>
-                    <button>View More</button>
-                </div>
-                <div class="section2-card">
-                    <img src="section2pics/chakra.png" alt="">
-                    <h2>Yoga</h2>
-                    <button>View More</button>
-                </div>
-                <div class="section2-card">
-                    <img src="section2pics/lipstick.png" alt="">
-                    <h2>Glow</h2>
-                    <button>View More</button>
-                </div>
-                <div class="section2-card">
-                    <img src="section2pics/dress-wedding-dress.png" alt="">
-                    <h2>Ensembles</h2>
-                    <button>View More</button>
-                </div>
-                <div class="section2-card">
-                    <img src="section2pics/mask-theater.png" alt="">
-                    <h2>Skin Care</h2>
-                    <button>View More</button>
-                </div>
-    
-    
-    
-            </div>
-
-
+      <div class="section2-div">
+        <h1>Topics</h1>
+        <div class="section2-cards">
+          <div class="section2-card">
+            <img src="assets/lingerie-underwear.png" alt="Lingerie" />
+            <h2>Lingerie</h2>
+            <button>View More</button>
+          </div>
+          <div class="section2-card">
+            <img src="assets/dress.png" alt="Spring" />
+            <h2>Spring</h2>
+            <button>View More</button>
+          </div>
+          <div class="section2-card">
+            <img src="assets/chakra.png" alt="Yoga" />
+            <h2>Yoga</h2>
+            <button>View More</button>
+          </div>
+          <div class="section2-card">
+            <img src="assets/lipstick.png" alt="Glow" />
+            <h2>Glow</h2>
+            <button>View More</button>
+          </div>
+          <div class="section2-card">
+            <img src="assets/dress-wedding-dress.png" alt="Ensembles" />
+            <h2>Ensembles</h2>
+            <button>View More</button>
+          </div>
+          <div class="section2-card">
+            <img src="assets/mask-theater.png" alt="Skin Care" />
+            <h2>Skin Care</h2>
+            <button>View More</button>
+          </div>
         </div>
-       
-
-        
-        
-     
+      </div>
     </section>
 
-    <hr class="line">
+    <hr class="line" />
 
-    <!-- End of Section 2 -->
-
+    <!--=======================================            Section 3              ==================================-->
     <section id="section3">
       <div class="card31">
         <div class="card-image3">
-          <img src="section3main.jfif" alt="Large Image3" />
+          <img src="assets/section3main.jfif" alt="Large Image 3" />
           <div class="text-badge3">FASHION</div>
         </div>
         <div class="card-profile3">
           <img
-            src="profile3.jfif"
+            src="assets/profile3.jfif"
             alt="Profile Picture 3"
             class="profile-picture3"
           />
@@ -145,7 +136,8 @@
         </div>
       </div>
     </section>
-<!---startSection4-->
+
+    <!--====================================             Section 4 - Trending              ========================-->
     <section id="section4">
       <div class="section-header">
         <h2>Trending</h2>
@@ -153,22 +145,22 @@
       <div class="cards">
         <div class="card">
           <div class="card-image">
-            <img src="image/section4left.jfif" alt="Large Image 1" />
+            <img src="assets/section4left.jfif" alt="Large Image 1" />
             <div class="card-text-top">LIFESTYLE</div>
           </div>
           <div class="card-profile">
             <img
-              src="image/profilepicture.jfif"
+              src="assets/profilepicture.jfif"
               alt="Profile Picture 1"
-              class="profile-picture"/>
-             
+              class="profile-picture"
+            />
             <div class="profile-info">
               <p class="name">Mallory Reyn</p>
               <p class="date">April 14th, 2023</p>
             </div>
           </div>
           <div class="card-content">
-            <h3>10 Things to help you with social stress.</h3>
+            <h3>10 Things to Help You with Social Stress</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
               sapien fringilla, mattis mattis tellus. Nullam quis imperdiet
@@ -182,12 +174,12 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="image/section4right.jfif" alt="Large Image 2" />
+            <img src="assets/section4right.jfif" alt="Large Image 2" />
             <div class="card-text-top">SUMMER</div>
           </div>
           <div class="card-profile">
             <img
-              src="image/profilepicture.jfif"
+              src="assets/profilepicture.jfif"
               alt="Profile Picture 2"
               class="profile-picture"
             />
@@ -197,7 +189,7 @@
             </div>
           </div>
           <div class="card-content">
-            <h3>The summer 2023 lineup is finally here.</h3>
+            <h3>The Summer 2023 Lineup is Finally Here</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
               sapien fringilla, mattis mattis tellus. Nullam quis imperdiet
@@ -210,134 +202,136 @@
         </div>
       </div>
     </section>
-<!---end section4-->
-    <section5>
-        <div class="section5 container">
-            <div class="card1">
-                <div class="fashion">
-                    <button><a href="">FASHION</a></button>
-                </div>
 
-                <div class="reasons">
-                    <div class="top">
-                        <img src="./assets/Mask group (2).png" alt="">
-                        <p>Mallory Reyn</p>
-                        <p>April 14th, 2023</p>
-                    </div>
-
-                    <div class="mid">
-                        <h3>5 Reasons to avoid shopping on saturdays</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur Pellentesque 
-                        sit amet sapien fringilla, mattis mattis tellus. 
-                        <span>Nullam quis imperdiet augue. Vestibulum.</span></p>
-                    </div>
-                        
-                    <div class="bottom">
-                        <img src="./assets/arrow-small-right.png" alt="">
-                        <p>READ MORE</p>
-                    </div>  
-                </div> 
-            </div> 
-
-
-            <div class="card2">
-                <div class="brands">
-                    <button><a href="">ENSEMBLES</a></button>
-                </div>
-                <div class="reasons">
-                    <div class="top">
-                        <img src="./assets/Mask group (2).png" alt="">
-                        <p>Mallory Reyn</p>
-                        <p>April 14th, 2023</p>
-                    </div>
-
-                    <div class="mid">
-                        <h3>5 10 Brands that remained
-                            faithful to your classy look.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur Pellentesque 
-                        sit amet sapien fringilla, mattis mattis tellus. 
-                        <span>Nullam quis imperdiet augue. Vestibulum.</span></p>
-                    </div>
-                        
-                    <div class="bottom">
-                        <img src="./assets/arrow-small-right.png" alt="">
-                        <p>READ MORE</p>
-                    </div>  
-                </div> 
+    <!--==================================                   Section 5                 ===========================-->
+    <section class="section5" id="section5">
+      <div class="section5-container">
+        <div class="section5-item">
+          <div class="section5-image">
+            <img src="assets/Mask group (5).png" alt="Fashion Image" />
+            <button class="section5-button"><a href="#">FASHION</a></button>
+          </div>
+          <div class="section5-content">
+            <div class="section5-header">
+              <img src="assets/Mask group (2).png" alt="Avatar" />
+              <div class="section5-author-date">
+                <p>Mallory Reyn</p>
+                <p>April 14th, 2023</p>
+              </div>
             </div>
-
-            <div class="card3">
-                <div class="health">
-                    <button><a href="">MENTAL HEALTH</a></button>    
-                </div>
-
-                <div class="reasons">
-                    <div class="top">
-                        <img src="./assets/Mask group (2).png" alt="">
-                        <p>Mallory Reyn</p>
-                        <p>April 14th, 2023</p>
-                    </div>
-
-                    <div class="mid">
-                        <h3>5 Mental health tips to cope
-                            with stress.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur Pellentesque 
-                        sit amet sapien fringilla, mattis mattis tellus. 
-                        <span>Nullam quis imperdiet augue. Vestibulum.</span></p>
-                    </div>
-                        
-                    <div class="bottom">
-                        <img src="./assets/arrow-small-right.png" alt="">
-                        <p>READ MORE</p>
-                    </div>  
-                </div>  
-             </div>   
-            
+            <div class="section5-body">
+              <h3>5 Reasons to Avoid Shopping on Saturdays</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
+                sapien fringilla, mattis mattis tellus.
+                <span>Nullam quis imperdiet augue. Vestibulum.</span>
+              </p>
+            </div>
+            <div class="section5-footer">
+              <img src="assets/arrow-small-right.png" alt="Arrow" />
+              <p>READ MORE</p>
+            </div>
+          </div>
         </div>
 
+        <div class="section5-item">
+          <div class="section5-image">
+            <img src="assets/Mask group (6).png" alt="Ensembles Image" />
+            <button class="section5-button"><a href="#">ENSEMBLES</a></button>
+          </div>
+          <div class="section5-content">
+            <div class="section5-header">
+              <img src="assets/Mask group (2).png" alt="Avatar" />
+              <div class="section5-author-date">
+                <p>Mallory Reyn</p>
+                <p>April 14th, 2023</p>
+              </div>
+            </div>
+            <div class="section5-body">
+              <h3>10 Brands That Remained Faithful to Your Classy Look</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
+                sapien fringilla, mattis mattis tellus.
+                <span>Nullam quis imperdiet augue. Vestibulum.</span>
+              </p>
+            </div>
+            <div class="section5-footer">
+              <img src="assets/arrow-small-right.png" alt="Arrow" />
+              <p>READ MORE</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section5-item">
+          <div class="section5-image">
+            <img src="assets/Mask group (7).png" alt="Mental Health Image" />
+            <button class="section5-button">
+              <a href="#">MENTAL HEALTH</a>
+            </button>
+          </div>
+          <div class="section5-content">
+            <div class="section5-header">
+              <img src="assets/Mask group (2).png" alt="Avatar" />
+              <div class="section5-author-date">
+                <p>Mallory Reyn</p>
+                <p>April 14th, 2023</p>
+              </div>
+            </div>
+            <div class="section5-body">
+              <h3>Mental Health Tips to Cope with Stress</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
+                sapien fringilla, mattis mattis tellus.
+                <span>Nullam quis imperdiet augue. Vestibulum.</span>
+              </p>
+            </div>
+            <div class="section5-footer">
+              <img src="assets/arrow-small-right.png" alt="Arrow" />
+              <p>READ MORE</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-                     <!-- footer -->
-
-    <footer>
-        <div class="footer container">
-            <div class="first-section">
-            
-                <div class="logo">
-
-                    <img src="./assets/Component 1.png" alt="">
-    
-                </div>
-    
-            
-                <div class="navigation">
-                    
-                    <h3>Let’s Hang Out</h3>
-                    <img src="./assets/facebook.png" alt="">
-                    <img src="./assets/twitter.png" alt="">
-                    <img src="./assets/linkedin.png" alt="">
-                    <img src="./assets/youtube.png" alt="">
-                    <img src="./assets/instagram.png" alt="">
-    
-                </div>
-            
-            </div>
-
-            
-           <div class="second-section">
-
-
-               <div class=""></div>
-                
-                <p>© 2023 - Lux Ventus by Zine.E.Falouti</p>
-                
-            </div>  
-
+    <!--====================================            Footer               =================================-->
+    <footer id="footer">
+      <div class="footer container">
+        <div class="first-section">
+          <div class="logo">
+            <img src="assets/Component 1.png" alt="Footer Logo" />
+          </div>
+          <div class="navigation">
+            <h3>Let’s Hang Out</h3>
+            <img src="assets/facebook.png" alt="Facebook" />
+            <img src="assets/twitter.png" alt="Twitter" />
+            <img src="assets/linkedin.png" alt="LinkedIn" />
+            <img src="assets/youtube.png" alt="YouTube" />
+            <img src="assets/instagram.png" alt="Instagram" />
+          </div>
         </div>
+        <div class="second-section">
+          <div></div>
+          <p>© 2023 - Lux Ventus by Zine.E.Falouti</p>
+        </div>
+      </div>
     </footer>
+    <!--===================================        scripts        =====================================-->
+    <a href="#section1" id="scrollUpBtn" title="Go to top">↑</a>
+    <script>
+      window.onscroll = function () {
+        var header = document.querySelector("header");
+        if (window.scrollY > 1) {
+          
+          header.classList.add("shrink");
+        } else {
+          header.classList.remove("shrink");
+        }
+      };
+    </script>
     <script>
       window.addEventListener("load", function () {
-        window.scrollTo(0, 0);
+        document.getElementById("section1").scrollIntoView();
       });
     </script>
   </body>
