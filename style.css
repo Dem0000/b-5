@@ -1502,8 +1502,8 @@ h1 span {
   color: rgb(5, 4, 95);
   border: none;
   outline: none;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 35px;
   border-radius: 20%;
   text-align: center;
   font-size: 25px;
@@ -1513,7 +1513,17 @@ h1 span {
 }
 
 #scrollUpBtn:hover {
-  background-color: #333;
+  background-color: #aa00f8;
 }
+
+
+@media (max-width: 420px) {
+  #scrollUpBtn{
+    width: 25px;
+    height: 35px;
+    right: 15px;
+  }
+}
+
 
 /*=====================================        THE END OR TO BE CONTINUED?        =========================================================*/
