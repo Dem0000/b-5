@@ -127,12 +127,12 @@ header.shrink .logo {
   transform: rotate(35deg);
 }
 
-/*========Styling for the search container===============*/
+
+/*=============== Show the search box when hovering over the search icon ==============*/
+
 .search-container {
   position: relative;
 }
-
-/*========Styling for the search icon============= */
 .search-icon {
   max-width: 47px;
   max-height: 47px;
@@ -155,8 +155,6 @@ header.shrink .logo {
   background-color: white;
   z-index: 1000;
 }
-
-/*=============== Show the search box when hovering over the search icon ==============*/
 .search-container:hover .search-box {
   display: flex;
   align-items: center;
