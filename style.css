@@ -32,7 +32,6 @@ section {
 
 /*============================================   START OF HEADER   ============================================*/
 
-
 header {
   background-color: #f4f4f4;
   top: 0;
@@ -128,8 +127,6 @@ header.shrink .logo {
   transform: rotate(35deg);
 }
 
-
-
 /*========Styling for the search container===============*/
 .search-container {
   position: relative;
@@ -146,7 +143,6 @@ header.shrink .logo {
 .search-container:hover .search-icon {
   display: none;
 }
-
 
 .search-box {
   display: none;
@@ -226,10 +222,6 @@ header.shrink .hamburger {
 }
 /*===========================================     END OF HEADER      ============================================*/
 
-
-
-
-
 /*========================================   START OF SECTION 1   ===============================================*/
 .section1 {
   max-width: 100%;
@@ -308,7 +300,6 @@ h1 span {
 
 /* -----------------   SECTION 1 Media queries for smaller screens   --------------------------*/
 
-
 @media (max-width: 768px) {
   .magazin {
     padding-top: 25vw;
@@ -333,13 +324,7 @@ h1 span {
   }
 }
 
-
 /*==================================================     END OF SECTION 1      =========================================================*/
-
-
-
-
-
 
 /*================================================       START OF SECTION 2   TOPICS       =============================================*/
 
@@ -413,8 +398,8 @@ h1 span {
 }
 
 .section2-card img {
-  width: 86px;
-  height: 86px;
+  max-width: 86px;
+  max-height: 86px;
 }
 
 .section2-card button {
@@ -456,11 +441,41 @@ h1 span {
   margin-right: auto;
 }
 
+/* -----------------   SECTION 2 Media queries for smaller screens   --------------------------*/
+
+@media  (max-width:845px) {
+  #section2 .section2-div h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+
+   .section2-card {
+    padding: revert;
+    height: 200px;
+    width: 120px;
+  }
+
+   .section2-card h2 {
+    font-size: 16px;
+  }
+  
+
+   .section2-card button {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+   .section2-card{
+    gap:0px;
+    height: 150px;
+    width: 100px;
+  }
+}
+
 /*====================================================            END OF SECTION 2       =============================================*/
-
-
-
-
 
 /* ====================================================           START OF SECTION 3            ======================================*/
 
@@ -680,9 +695,7 @@ h1 span {
   color: blue;
 }
 
-
 /* ------------------  SECTION 3 Media queries for smaller screens   -------------------------------*/
-
 
 @media (max-width: 700px) {
   .card-profile3 {
@@ -778,9 +791,6 @@ h1 span {
 }
 
 /*===================================================     END OF SECTION3          =====================================================*/
-
-
-
 
 /*==================================================          START OF SECTION4         =======================================================*/
 #section4 {
@@ -1022,8 +1032,6 @@ h1 span {
 
 /* ------------------  SECTION 4 Media queries for smaller screens   -----------------------*/
 
-
-
 @media (max-width: 1200px) {
   #section4 {
     padding-left: 20px;
@@ -1045,7 +1053,6 @@ h1 span {
     margin-bottom: 20px;
   }
 }
-
 
 @media (max-width: 900px) {
   #section4 {
@@ -1071,7 +1078,6 @@ h1 span {
     font-size: 14px;
   }
 }
-
 
 @media (max-width: 700px) {
   #section4 {
@@ -1104,7 +1110,6 @@ h1 span {
     letter-spacing: 0.2em;
   }
 }
-
 
 @media (max-width: 400px) {
   #section4 {
@@ -1155,9 +1160,6 @@ h1 span {
 }
 
 /*================================================        END OF SECTION 4        ==================================================*/
-
-
-
 
 /*======================================================      START OF SECTION 5        =============================================*/
 
@@ -1372,11 +1374,7 @@ h1 span {
 
 /*===================================================     END OF SECTION 5      ===========================================*/
 
-
-
-
 /*================================================        START OF FOOTER           =======================================*/
-
 
 .footer {
   background-color: white;
@@ -1496,27 +1494,26 @@ h1 span {
 /*---------------  scroll up button  -----------------*/
 
 #scrollUpBtn {
-  position: fixed; 
-  bottom: 20px; 
-  right: 20px; 
-  z-index: 99; 
-  background-color:#4ce0d7; 
-  color: rgb(5, 4, 95); 
-  border: none; 
-  outline: none; 
-  width: 50px; 
-  height: 50px; 
-  border-radius: 20%; 
-  text-align: center; 
-  font-size: 25px; 
-  text-decoration: none; 
-  cursor: pointer; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #4ce0d7;
+  color: rgb(5, 4, 95);
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
   object-fit: cover;
 }
 
 #scrollUpBtn:hover {
-  background-color: #333; 
+  background-color: #333;
 }
-
 
 /*=====================================        THE END OR TO BE CONTINUED?        =========================================================*/
