@@ -200,14 +200,20 @@ header.shrink .hamburger {
   .navheader {
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color:#4ce0d7;
     position: absolute;
-    top: 140px;
+    top: 140px; 
     left: 0;
     right: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
+    gap: 5px;
+    z-index: 999; 
+  }
+
+  header.shrink .navheader {
+    top: 80px; 
   }
 
   #menu-toggle:checked + .hamburger + .navheader {
