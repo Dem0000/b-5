@@ -336,6 +336,48 @@ h1 span {
   }
 }
 
+/*====================================================            პირველი სექციის ანიმაცია     =============================================*/
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.section1 .magazin p,
+.section1 .magazin h1,
+.section1 .breack p {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.section1 .magazin p {
+  animation-delay: 0.5s;
+}
+
+.section1 .magazin h1 {
+  animation-delay: 0.7s;
+}
+
+.section1 .breack p {
+  animation-delay: 0.9s;
+}
+
+@media (max-width: 768px) {
+  .section1 .magazin p,
+  .section1 .magazin h1,
+  .section1 .breack p {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+}
+
 /*==================================================     END OF SECTION 1      =========================================================*/
 
 /*================================================       START OF SECTION 2   TOPICS       =============================================*/
