@@ -791,6 +791,12 @@ h1 span {
     padding: 10px 10px;
     border-radius: 40px;
   }
+  .text-badge3{
+    padding: 3px 10px;
+    top: 0px;
+    left: 1px;
+  }
+
   .profile-picture3 {
     margin-right: 0;
   }
@@ -814,11 +820,7 @@ h1 span {
   .card-image3 {
     height: 150px;
   }
-  .text-badge3{
-    padding: 3px 10px;
-    top: 0px;
-    left: 6px;
-  }
+  
   .profile-picture3 {
     height: 40px;
     width: 40px;
@@ -1432,7 +1434,7 @@ h1 span {
 
 /* --------------------------  SECTION 5 Media queries for smaller screens   ----------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .section5-item {
     flex-direction: column;
   }
@@ -1441,6 +1443,13 @@ h1 span {
   .section5-content {
     width: 100%;
   }
+  .section5-button {
+    top: 0px;
+    left: 6px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
   .section5-image {
     height: 300px;
   }
@@ -1462,12 +1471,7 @@ h1 span {
   .section5-image {
     height: 150px;
   }
-  .section5-button {
-    top: 0px;
-    left: 6px;
-    padding: 3px 10px;
-    font-size: 12px;
-  }
+  
   .section5-content {
     height: 100%;
     padding: 5px;
