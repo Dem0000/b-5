@@ -70,7 +70,7 @@ header {
 
 
 header.shrink .head-container {
-  height: 50px;
+  height: 56px;
 }
 
 .logo {
@@ -234,7 +234,7 @@ header.shrink .hamburger {
     flex-direction: column;
     background-color:#4ce0d7;
     position: absolute;
-    top: 50px; 
+    top: 43px; 
     left: 0;
     right: 0;
     width: 100%;
@@ -246,11 +246,11 @@ header.shrink .hamburger {
 
   
 header.shrink .head-container {
-  height: 50px;
+  height: 43px;
 }
 
   header.shrink .navheader {
-    top: 50px; 
+    top: 43px; 
   }
 
   #menu-toggle:checked + .hamburger + .navheader {
@@ -481,10 +481,13 @@ h1 span {
   transition: 0.25s;
   padding: 51px 30px 29px 30px;
   box-sizing: border-box;
+  transition: transform 0.9 ease;
 }
 
 .section2-card:hover {
   transform: scale(1.07);
+  background-color: #4CE0D7;
+  box-shadow:0px 4px 4px 0px #262626;
 }
 
 .section2-card img {
@@ -507,7 +510,14 @@ h1 span {
 
 .section2-card:hover button {
   background-color: #ffff;
+  outline: none;
+  border: none;
 }
+
+.section2-card button:hover{
+  box-shadow: 0px 2px 2px 2px #262626;
+}
+
 
 .section2-card h2 {
   font-size: 20px;
