@@ -61,7 +61,7 @@ header {
   justify-content: space-between;
   width: 100%;
   max-width: 1272px;
-  height: 140px;
+  height: 100px;
   margin: auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -258,6 +258,7 @@ header.shrink .head-container {
   border-radius: 40px;
   overflow: hidden;
   margin-bottom: 73px;
+  margin-top: 40px;
 }
 
 .magazin {
@@ -1559,7 +1560,9 @@ h1 span {
   align-items: center;
   flex-wrap: nowrap;
 }
-
+.first-section h3{
+  margin-right: 20px;
+}
 .navigation img {
   width: 31px;
   height: 31px;
@@ -1568,6 +1571,7 @@ h1 span {
 .navigation img:hover {
   transform: scale(1.2);
 }
+
 
 .second-section div {
   max-width: 1440px;
@@ -1599,6 +1603,7 @@ h1 span {
     align-items: flex-start;
     gap: 15px;
     height: 100%;
+    padding-left: 10px;
     
   }
 
@@ -1609,7 +1614,7 @@ h1 span {
 
   .second-section p:last-child {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0px;
     text-align: center;
   }
 }
@@ -1626,6 +1631,11 @@ h1 span {
     gap: 5px;
   }
 
+  .navigation img{
+    width:20px;
+    height: 20px;
+  }
+
   .second-section div {
     max-width: 100%;
   }
@@ -1637,6 +1647,7 @@ h1 span {
     flex-wrap: wrap;
     gap: 5px;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .second-section div {
