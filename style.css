@@ -45,7 +45,7 @@ header {
   top: 0;
   position: sticky;
   z-index: 1000;
-  transition: all;
+  transition: all 0.7s ease;
 }
 
 .head-container {
@@ -59,10 +59,10 @@ header {
   margin: auto;
   padding: 0 20px;
   box-sizing: border-box;
-  transition: height;
+  transition: height 0.7s ease;
 }
 
-/* ============================Shrink header==================== */
+
 header.shrink .head-container {
   height: 80px;
 }
@@ -188,11 +188,11 @@ header.shrink .logo {
   cursor: pointer;
   margin-left: auto;
   width: 40px;
-  transition: width, height; /* Smooth size transition */
+  transition: width, height; 
 }
 
 header.shrink .hamburger {
-  width: 30px; /* Smaller width */
+  width: 30px; 
 }
 
 .hamburger span {
