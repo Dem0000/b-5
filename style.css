@@ -275,8 +275,10 @@ header.shrink .hamburger {
 
 h1 span {
   background: linear-gradient(90deg, #4ce0d7 43.06%, #8ba9f4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific property */
+  -webkit-text-fill-color: transparent; /* WebKit-specific property */
+  color: transparent;
   font-family: Poppins, sans-serif;
   font-size: 4vw;
   font-weight: 700;
@@ -511,13 +513,18 @@ h1 span {
     width: 120px;
   }
 
+  .section2-card img{
+    max-width: 50px;
+    max-height: 50px;
+  }
+
    .section2-card h2 {
     font-size: 16px;
   }
   
 
    .section2-card button {
-    padding: 0px;
+    padding: 1px 5px;
   }
 }
 
@@ -576,9 +583,11 @@ h1 span {
   transform: scale(1.05);
 }
 
+
+/*---------------text-badge animation--------------*/
 .text-badge3 {
   position: absolute;
-  top: 23px;
+  top: 23px; 
   left: 47px;
   background: #262626;
   color: #fff;
@@ -588,8 +597,23 @@ h1 span {
   font-size: 12px;
   font-weight: 700;
   text-align: center;
-  transition: background-color 0.5s ease;
+  transition: background-color 1.2s ease;
+  transform: translateY(-50px); 
+  opacity: 0; 
 }
+
+.card31:hover .text-badge3 {
+  animation: slideDown 1.2s ease forwards; 
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+/*-----------------------------------------------------*/
+
 .card-image3:hover .text-badge3 {
   background-color: #4ce0d7;
 }
@@ -612,7 +636,7 @@ h1 span {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.3s ease, border-radius 0.3s ease;
+  transition: transform 0.5s ease, border-radius 0.5s ease;
   margin-right: 45px;
 }
 
@@ -627,7 +651,7 @@ h1 span {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
-  transition: color 0.5s ease, font-size 0.5s ease;
+  transition: color 1.4s ease, font-size 1.4s ease;
   color: #bcbcbc;
 }
 
@@ -648,7 +672,7 @@ h1 span {
   flex: 1;
   color: #bcbcbc;
   height: 30px;
-  transition: color 0.5s ease, font-size 0.5s ease, transform 0.3s ease;
+  transition: color 1.4s ease, font-size 1.4s ease, transform 1.4s ease;
   margin-left: 100px;
 }
 
@@ -657,7 +681,7 @@ h1 span {
   font-weight: 400;
   margin: 0;
   color: #bcbcbc;
-  transition: color 0.5s ease;
+  transition: color 1s ease;
   text-align: left;
   position: relative;
 }
@@ -684,7 +708,7 @@ h1 span {
 .underimag3 {
   margin-left: 65px;
   margin-right: auto;
-  transition: text-decoration 0.3s ease;
+  transition: text-decoration 1s ease;
   margin-top: 20px;
   overflow: visible;
 }
@@ -695,7 +719,7 @@ h1 span {
   font-weight: 700;
   line-height: 39px;
   margin-bottom: 25px;
-  transition: text-decoration 0.3s ease;
+  transition: text-decoration 1s ease;
   position: relative;
 }
 
@@ -790,6 +814,11 @@ h1 span {
   .card-image3 {
     height: 150px;
   }
+  .text-badge3{
+    padding: 3px 10px;
+    top: 0px;
+    left: 6px;
+  }
   .profile-picture3 {
     height: 40px;
     width: 40px;
@@ -844,9 +873,9 @@ h1 span {
   }
 }
 
-/*===================================================     END OF SECTION3          =====================================================*/
+/*===================================================     END OF SECTION 3          =====================================================*/
 
-/*==================================================          START OF SECTION4         =======================================================*/
+/*==================================================          START OF SECTION 4         =======================================================*/
 #section4 {
   display: flex;
   flex-direction: column;
@@ -936,6 +965,8 @@ h1 span {
   transform: scale(1.1);
 }
 
+
+
 .card-text-top {
   position: absolute;
   top: 20px;
@@ -949,6 +980,14 @@ h1 span {
   line-height: 18px;
   text-align: center;
   transition: background-color 0.5s ease;
+  opacity: 0; 
+  transform: translateY(-20px); 
+}
+
+#section4:hover .card-text-top {
+  opacity: 1; 
+  transform: translateY(0); 
+  transition: transform 1s ease, opacity 1s ease; 
 }
 
 .card-image:hover .card-text-top {
@@ -1268,23 +1307,31 @@ h1 span {
   transform: scale(1.1);
 }
 
+
+
 .section5-button {
+  font-family: poppins, sans-serif;
   position: absolute;
   top: 20px;
   left: 20px;
   background-color: #262626;
   border-radius: 40px;
   padding: 10px 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 1s ease;
   border: none;
   outline: none;
+  opacity: 0;
+  transform: translateX(-50px); 
 }
+
+
 .section5-image:hover .section5-button {
   background-color: #4ce0d7;
   transform: scale(1.1);
 }
 
 .section5-button a {
+  font-family: poppins, sans-serif;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -1293,6 +1340,11 @@ h1 span {
 .section5-button:hover {
   background-color: #4ce0d7;
   transform: scale(1.05);
+}
+
+#section5:hover .section5-button{
+  transform: translateX(0px);
+  opacity:1;
 }
 
 .section5-content {
@@ -1313,7 +1365,7 @@ h1 span {
 }
 
 .section5-header:hover img {
-  transform: scale(1.4);
+  transform: scale(1.2);
   border-radius: 20%;
   z-index: 2;
 }
@@ -1412,8 +1464,9 @@ h1 span {
   }
   .section5-button {
     top: 0px;
-    left: 0px;
-    padding: 5px 5px;
+    left: 6px;
+    padding: 3px 10px;
+    font-size: 12px;
   }
   .section5-content {
     height: 100%;
