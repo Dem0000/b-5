@@ -38,6 +38,12 @@ section {
   scroll-margin-top: 140px;
 }
 
+
+
+
+
+
+
 /*============================================   START OF HEADER   ===========================================*/
 
 header {
@@ -45,7 +51,7 @@ header {
   top: 0;
   position: sticky;
   z-index: 1000;
-  transition: all 0.7s ease;
+  transition: all 0.5s ease;
 }
 
 .head-container {
@@ -59,12 +65,12 @@ header {
   margin: auto;
   padding: 0 20px;
   box-sizing: border-box;
-  transition: height 0.7s ease;
+  transition: height 0.5s ease;
 }
 
 
 header.shrink .head-container {
-  height: 80px;
+  height: 50px;
 }
 
 .logo {
@@ -205,23 +211,31 @@ header.shrink .hamburger {
 
 /* ---------------------------------   HEADER   media query for responsiveness    ---------------- */
 @media (max-width: 1000px) {
+ .head-container{
+  height: 50px;
+ }
   .navheader {
     display: none;
     flex-direction: column;
     background-color:#4ce0d7;
     position: absolute;
-    top: 140px; 
+    top: 50px; 
     left: 0;
     right: 0;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     align-items: center;
     gap: 5px;
     z-index: 999; 
   }
 
+  
+header.shrink .head-container {
+  height: 50px;
+}
+
   header.shrink .navheader {
-    top: 80px; 
+    top: 50px; 
   }
 
   #menu-toggle:checked + .hamburger + .navheader {
@@ -315,6 +329,10 @@ h1 span {
 /* -----------------   SECTION 1 Media queries for smaller screens   --------------------------*/
 
 @media (max-width: 768px) {
+  .section1{
+    margin-bottom: 40px;
+  }
+  
   .magazin {
     padding-top: 25vw;
     padding-left: 6vw;
@@ -502,11 +520,23 @@ h1 span {
 @media  (max-width:845px) {
   #section2 .section2-div h1 {
     text-align: center;
+
   }
 }
 
 @media (max-width: 500px) {
+  .section2-cards {
+    margin-bottom: 20px;
+  }
 
+  .line {
+    margin-bottom: 20px;
+  }
+
+
+  #section2 h1 {
+    margin-bottom: 0px;
+  }
    .section2-card {
     padding: revert;
     height: 200px;
@@ -529,6 +559,10 @@ h1 span {
 }
 
 @media (max-width: 400px) {
+  #section2 h1 {
+    font-size: 22px;
+  }
+
    .section2-card{
     gap:0px;
     height: 150px;
@@ -776,6 +810,10 @@ h1 span {
 /* ------------------  SECTION 3 Media queries for smaller screens   -------------------------------*/
 
 @media (max-width: 700px) {
+
+  #section3{
+    padding: bottom 40px;;
+  }
   .card-profile3 {
     margin-left: 10px;
     flex-direction: column;
@@ -814,7 +852,7 @@ h1 span {
 
 @media (max-width: 400px) {
   #section3 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-bottom: 0px;
   }
   .card-image3 {
@@ -909,7 +947,7 @@ h1 span {
   font-size: 32px;
   font-weight: 700;
   color: #262626;
-  text-align: left;
+  
 }
 
 .cards {
@@ -1210,6 +1248,8 @@ h1 span {
   #section4 {
     padding-bottom: 30px;
   }
+  .section-header h2 {
+    font-size: 22px;}
 
   .cards {
     margin-top: 0px;
@@ -1252,6 +1292,7 @@ h1 span {
   .readmore {
     padding-top: 0px;
   }
+
 }
 
 /*================================================        END OF SECTION 4        ==================================================*/
@@ -1435,6 +1476,8 @@ h1 span {
 /* --------------------------  SECTION 5 Media queries for smaller screens   ----------------------*/
 
 @media screen and (max-width: 700px) {
+
+
   .section5-item {
     flex-direction: column;
   }
@@ -1481,6 +1524,9 @@ h1 span {
     margin-bottom: 0px;
     font-size: 22px;
   }
+
+
+  
 }
 
 /*===================================================     END OF SECTION 5      ===========================================*/
@@ -1553,13 +1599,12 @@ h1 span {
     align-items: flex-start;
     gap: 15px;
     height: 100%;
-    padding-right: inherit;
-    padding-left: inherit;
+    
   }
 
   .navigation {
-    justify-content: flex-start;
-    gap: 30px;
+    justify-content: space-between;
+    
   }
 
   .second-section p:last-child {
@@ -1572,8 +1617,8 @@ h1 span {
 @media (max-width: 600px) {
   .first-section {
     flex-direction: column;
-    padding: 20px;
-    gap: 30px;
+    padding: 20px 0px 0px;
+    gap: 0px;
     flex-wrap: wrap;
   }
 
@@ -1587,10 +1632,7 @@ h1 span {
 }
 
 @media (max-width: 300px) {
-  .navigation h3 {
-    padding-right: 60px;
-  }
-
+  
   .navigation {
     flex-wrap: wrap;
     gap: 5px;
