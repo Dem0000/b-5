@@ -141,6 +141,21 @@ header.shrink .logo {
   transform: rotate(35deg);
 }
 
+.navigation h3:hover{
+  animation: textAnimation 3s infinite;
+}
+
+@keyframes textAnimation {
+  0%, 100% {
+      color: #4CE0D7;
+      transform: scale(1);
+  }
+  50% {
+      color: white;
+      transform: scale(1.2);
+  }
+}
+
 
 /*=============== Show the search box when hovering over the search icon ==============*/
 
