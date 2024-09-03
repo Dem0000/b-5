@@ -54,6 +54,12 @@ header {
   transition: all 0.5s ease;
 }
 
+header:hover {
+  box-shadow: 0px 0px 12px 0px ;
+}
+
+
+
 .head-container {
   display: flex;
   flex-direction: row;
@@ -65,6 +71,7 @@ header {
   margin: auto;
   padding: 0 20px;
   box-sizing: border-box;
+  border-radius: 40px;
   transition: height 0.5s ease;
 }
 
@@ -213,7 +220,7 @@ header.shrink .logo {
 }
 
 header.shrink .hamburger {
-  width: 30px; 
+  width: 20px; 
 }
 
 .hamburger span {
@@ -261,6 +268,16 @@ header.shrink .head-container {
     display: flex;
   }
 }
+
+@media (max-width: 600px) {
+#menu-toggle:checked + .hamburger + .navheader {
+  display: flex;
+  gap: 0px;
+}
+
+}
+
+
 /*===========================================     END OF HEADER      ============================================*/
 
 /*========================================   START OF SECTION 1   ===============================================*/
@@ -487,7 +504,7 @@ h1 span {
 .section2-card:hover {
   transform: scale(1.07);
   background-color: #4CE0D7;
-  box-shadow:0px 4px 4px 0px #262626;
+  box-shadow:0px 8px 8px 0px #867e7e;
 }
 
 .section2-card img {
@@ -515,7 +532,7 @@ h1 span {
 }
 
 .section2-card button:hover{
-  box-shadow: 0px 2px 2px 2px #262626;
+  box-shadow: 0px 5px 5px 2px #867e7e;
 }
 
 
